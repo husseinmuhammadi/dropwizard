@@ -24,7 +24,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.javastudio.tutorial.Application</mainClass>
+                            <mainClass>com.javastudio.tutorial.MainApplication</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -35,6 +35,13 @@
             <resource>
                 <filtering>true</filtering>
                 <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>${project.basedir}</directory>
+                <targetPath>${project.build.directory}</targetPath>
+                <includes>
+                    <include>configuration.yml</include>
+                </includes>
             </resource>
         </resources>
     </build>

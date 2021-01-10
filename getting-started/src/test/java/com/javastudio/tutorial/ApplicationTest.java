@@ -12,15 +12,15 @@ import java.util.Properties;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ApplicationTest {
+class MainApplicationTest {
 
-    private static final Logger logger = LoggerFactory.getLogger(ApplicationTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(MainApplicationTest.class);
 
     private static Properties properties = new Properties();
 
     @BeforeAll
     static void beforeAll() {
-        try (InputStream resource = Application.class.getClassLoader().getResourceAsStream("application.properties")) {
+        try (InputStream resource = MainApplication.class.getClassLoader().getResourceAsStream("application.properties")) {
             properties.load(resource);
         } catch (IOException e) {
             logger.info("Error loading application properties", e);
