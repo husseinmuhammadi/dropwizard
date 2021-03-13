@@ -15,17 +15,12 @@ public class MainApplication extends Application<MainConfiguration> {
     }
 
     @Override
-    public void run(MainConfiguration mainConfiguration, Environment environment) throws Exception {
-        environment.jersey().register(new ProductResource());
-    }
-
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
     public void initialize(Bootstrap<MainConfiguration> bootstrap) {
         super.initialize(bootstrap);
+    }
+
+    @Override
+    public void run(MainConfiguration configuration, Environment environment) throws Exception {
+        environment.jersey().register(new ProductResource());
     }
 }

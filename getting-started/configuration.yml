@@ -1,1 +1,18 @@
-name: Hossein
+server:
+  maxThreads: 1028
+  maxQueuedRequests: 2048
+  applicationContextPath: /api/v1
+  applicationConnectors:
+    - type: http
+      port: 8989
+  adminConnectors:
+    - type: http
+      port: 8990
+  requestLog:
+    appenders:
+      #    - type: console
+      - type: file
+        timeZone: Asia/Tehran
+        currentLogFilename: requests.log
+        archivedLogFilenamePattern: requests-%d.log.gz
+        archivedFileCount: 5
