@@ -1,6 +1,6 @@
 package com.javastudio.tutorial;
 
-import com.javastudio.tutorial.resources.ProductResource;
+import com.javastudio.tutorial.resources.ProductsResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -21,6 +21,6 @@ public class MainApplication extends Application<MainConfiguration> {
 
     @Override
     public void run(MainConfiguration configuration, Environment environment) throws Exception {
-        environment.jersey().register(new ProductResource());
+        environment.jersey().register(new ProductsResource());
     }
 }

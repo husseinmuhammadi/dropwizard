@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/hello")
 @Produces(MediaType.APPLICATION_JSON)
-public class ProductResource {
+public class ProductsResource {
     @GET
     @Timed
     public Product find(@QueryParam("id") Long id) {
