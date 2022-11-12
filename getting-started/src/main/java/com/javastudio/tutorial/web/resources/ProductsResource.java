@@ -1,7 +1,7 @@
-package com.javastudio.tutorial.resources;
+package com.javastudio.tutorial.web.resources;
 
 import com.codahale.metrics.annotation.Timed;
-import com.javastudio.tutorial.api.Product;
+import com.javastudio.tutorial.web.model.Product;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
