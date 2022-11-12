@@ -5,12 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.javastudio.tutorial.dropwizard</groupId>
-    <artifactId>dropwizard-samples-parent</artifactId>
+    <artifactId>dropwizard-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
         <module>getting-started</module>
+        <module>mongodb</module>
     </modules>
 
     <properties>
