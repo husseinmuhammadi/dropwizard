@@ -1,4 +1,4 @@
-package com.javastudio.tutorial.api;
+package com.javastudio.tutorial.web.model;
 
 public class Product {
 

@@ -1,6 +1,6 @@
 package com.javastudio.tutorial;
 
-import com.javastudio.tutorial.resources.ProductsResource;
+import com.javastudio.tutorial.web.resources.ProductsResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
