@@ -12,7 +12,7 @@
     <artifactId>dropwizard-mongodb</artifactId>
 
     <properties>
-        <main-class>com.javastudio.tutorial.dropwizard.Main</main-class>
+        <main-class>com.javastudio.tutorial.dropwizard.MainApplication</main-class>
     </properties>
 
     <build>
